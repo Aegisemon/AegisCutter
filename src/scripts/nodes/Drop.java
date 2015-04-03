@@ -1,6 +1,8 @@
 package scripts.nodes;
 
+import org.tribot.api2007.Inventory;
 import scripts.core.Node;
+import scripts.data.Constants;
 
 /**
  * Created by Toon on 03/04/15.
@@ -8,16 +10,16 @@ import scripts.core.Node;
 public class Drop extends Node {
     @Override
     public String status() {
-        return null;
+        return "Dropping logs";
     }
 
     @Override
     public boolean validate() {
-        return false;
+        return Inventory.isFull() && !Constants.bankingEnabled;
     }
 
     @Override
     public void execute() {
-
+        Inventory.dropAllExcept(Constants.AXE);
     }
 }
