@@ -61,7 +61,7 @@ public class Chop extends Node {
         if (Banking.isInBank()) {
             for (RSTile tile : Constants.PATH_TO_TREE_AREA) {
                 Walking.clickTileMM(tile, 1);
-                General.sleep(2300, 3800);
+                General.sleep(2300, 4800);
             }
         }
     }

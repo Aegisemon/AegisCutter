@@ -29,8 +29,7 @@ public class Rescue extends Node {
 
     public void rest(){
         if (Banking.isInBank()){
-            int seconds = (General.random(8, 10) - Player.getRSPlayer().getHealth()) * 60;
-            System.out.println("Waiting " + seconds + " seconds to get health back up.");
+            int seconds = (General.random(9, 10) - Player.getRSPlayer().getHealth()) * 45;
             General.sleep((seconds*1000) - 1800, (seconds*1000) + 3200);
         }
     }
