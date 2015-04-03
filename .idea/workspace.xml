@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859939f-4327-4876-ad34-1278f0478620" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" afterPath="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Bank.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Bank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Chop.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Chop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Drop.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Drop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Rescue.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Rescue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/data/Constants.java" afterPath="$PROJECT_DIR$/src/scripts/data/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AegisCutter.iws" />
@@ -33,16 +29,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Chop.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4754601" vertical-offset="0" max-vertical-offset="1155">
-              <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1125">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1819#1820#0" expanded="true" />
-                <element signature="e#1892#1893#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scripts/data/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2760736" vertical-offset="0" max-vertical-offset="978">
+              <caret line="21" column="137" selection-start-line="21" selection-start-column="137" selection-end-line="21" selection-end-column="137" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,7 +54,7 @@
       <file leaf-file-name="AegisChopper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="585">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
@@ -65,12 +69,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/scripts/data/Constants.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Bank.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Drop.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Rescue.java" />
         <option value="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Chop.java" />
+        <option value="$PROJECT_DIR$/src/scripts/data/Constants.java" />
       </list>
     </option>
   </component>
@@ -107,6 +111,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,8 +199,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,11 +326,13 @@
       <workItem from="1428052098252" duration="1958000" />
       <workItem from="1428054927207" duration="918000" />
       <workItem from="1428062088979" duration="1460000" />
+      <workItem from="1428066930447" duration="124000" />
+      <workItem from="1428069626306" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4336000" />
+    <option name="totallyTimeSpent" value="4705000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -410,12 +416,46 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="585">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="585">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -431,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/data/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2607362" vertical-offset="0" max-vertical-offset="978">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -472,13 +505,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4754601" vertical-offset="0" max-vertical-offset="1155">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1125">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1892#1893#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/data/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2760736" vertical-offset="0" max-vertical-offset="978">
+          <caret line="21" column="137" selection-start-line="21" selection-start-column="137" selection-end-line="21" selection-end-column="137" />
+          <folding />
         </state>
       </provider>
     </entry>
