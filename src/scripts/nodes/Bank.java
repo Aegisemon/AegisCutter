@@ -1,9 +1,11 @@
 package scripts.nodes;
 
+import org.tribot.api2007.Banking;
 import scripts.core.Node;
 
 import org.tribot.api2007.Inventory;
 import org.tribot.api2007.WebWalking;
+import scripts.data.Constants;
 
 /**
  * Created by Toon on 03/04/15.
@@ -16,17 +18,19 @@ public class Bank extends Node {
 
     @Override
     public boolean validate() {
-        return Inventory.isFull();
+        return Inventory.isFull() && Constants.bankingEnabled;
     }
 
     @Override
     public void execute() {
-        /*
-        * Walk to nearest bank
-        * Find bank
-        * Open the bank
-        * Desposit all except for axe if found in inventory
-        */
-        WebWalking.walkToBank();
+        if (!Banking.isInBank()) {
+            WebWalking.walkToBank();
+        } else {
+            if (Banking.isInBank()) {
+                Banking.openBankBooth();
+                if (Banking.isBankScreenOpen())
+                    Banking.depositAllExcept(Constants.AXE);
+            }
+        }
     }
 }
