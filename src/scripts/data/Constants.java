@@ -10,7 +10,7 @@ import org.tribot.api2007.types.RSTile;
  */
 public class Constants {
 
-    public static final String[] TREE = { "Tree", "Oak", "Willow" };
+    public static final String[] TREE = { "Tree", "Oak", "Willow", "Yew" };
     public static final String[] AXE = { "Bronze axe", "Iron axe", "Steel axe", "Mithril axe", "Adamant axe", "Rune axe", "Dragon axe" };
     public static String treeToChop = TREE[2];
 
