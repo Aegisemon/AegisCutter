@@ -36,8 +36,9 @@ public class AegisChopper extends Script{
         while (true) {
             for (final Node node : nodes) {
                 if (node.validate()) {
+                    System.out.println(node.status());
                     node.execute();
-                    sleep(General.random(min, max));	//time in between executing nodes
+                    sleep(General.random(min, max));
                 }
             }
         }

@@ -1,9 +1,10 @@
 package scripts.nodes;
 
+import scripts.core.Node;
+
 import org.tribot.api.General;
 import org.tribot.api2007.Player;
 import org.tribot.api2007.WebWalking;
-import scripts.core.Node;
 
 /**
  * Created by Toon on 03/04/15.

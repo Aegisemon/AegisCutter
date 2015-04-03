@@ -1,11 +1,11 @@
 package scripts.nodes;
 
-import org.tribot.api2007.Banking;
 import scripts.core.Node;
+import scripts.data.Constants;
 
 import org.tribot.api2007.Inventory;
 import org.tribot.api2007.WebWalking;
-import scripts.data.Constants;
+import org.tribot.api2007.Banking;
 
 /**
  * Created by Toon on 03/04/15.

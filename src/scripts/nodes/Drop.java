@@ -1,8 +1,9 @@
 package scripts.nodes;
 
-import org.tribot.api2007.Inventory;
 import scripts.core.Node;
 import scripts.data.Constants;
+
+import org.tribot.api2007.Inventory;
 
 /**
  * Created by Toon on 03/04/15.
