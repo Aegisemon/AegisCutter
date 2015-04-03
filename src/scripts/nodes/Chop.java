@@ -52,15 +52,16 @@ public class Chop extends Node {
 
     private RSObject closestTree(String tree, int range) {
         RSObject[] objects = Objects.findNearest(range, tree);
-        if (objects[0] != null)
+        if (objects.length > 0)
             return objects[0];
         return null;
     }
 
     private void walkToTreeArea() {
-        if (!isInTreeArea()) {
+        if (Banking.isInBank()) {
             for (RSTile tile : Constants.PATH_TO_TREE_AREA) {
-                Walking.clickTileMS(tile, 1);
+                Walking.clickTileMM(tile, 1);
+                General.sleep(2300, 3800);
             }
         }
     }

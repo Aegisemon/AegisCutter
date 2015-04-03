@@ -19,6 +19,6 @@ public class Constants {
     public static boolean bankingEnabled = true;
 
     public static final RSArea TREE_AREA = new RSArea(new RSTile(3089, 3229, 0), 5);
-    public static final RSTile[] PATH_TO_TREE_AREA = { new RSTile(3098, 3243, 0), new RSTile(3096, 3231, 0), new RSTile(3089, 3229, 0) };
+    public static final RSTile[] PATH_TO_TREE_AREA = { new RSTile(3098, 3243, 0), new RSTile(3096, 3231, 0), new RSTile(3089, 3229, 0) }; //TODO: Randomize this path
 
 }

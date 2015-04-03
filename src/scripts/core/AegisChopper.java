@@ -23,6 +23,7 @@ public class AegisChopper extends Script{
     List<Node> nodes = new ArrayList<Node>();
 
     public void onStart(){
+        General.useAntiBanCompliance(true);
         Collections.addAll(nodes, new Chop(), new Bank(), new Drop(), new Rescue());
     }
 

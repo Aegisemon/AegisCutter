@@ -1,5 +1,6 @@
 package scripts.nodes;
 
+import org.tribot.api2007.Banking;
 import scripts.core.Node;
 
 import org.tribot.api.General;
@@ -27,8 +28,10 @@ public class Rescue extends Node {
     }
 
     public void rest(){
-        int seconds = General.random(8, 10) - Player.getRSPlayer().getHealth();
-        System.out.println("Waiting " + seconds + " to get health back up.");
-        General.sleep((seconds*1000) - 1800, (seconds*1000) + 3200);
+        if (Banking.isInBank()){
+            int seconds = (General.random(8, 10) - Player.getRSPlayer().getHealth()) * 60;
+            System.out.println("Waiting " + seconds + " seconds to get health back up.");
+            General.sleep((seconds*1000) - 1800, (seconds*1000) + 3200);
+        }
     }
 }
