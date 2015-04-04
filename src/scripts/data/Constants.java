@@ -14,6 +14,7 @@ public class Constants {
 
     public static final RSArea DRAYNOR_BANK_AREA = new RSArea(new RSTile(3092, 3240, 0), new RSTile(3097, 3246, 0));
     public static final RSArea TREE_AREA = new RSArea(new RSTile(3088, 3229, 0), 6);
+
     public static final RSArea[] PATH_TO_TREE_AREA = {
             new RSArea(new RSTile(3098, 3240, 0), new RSTile(3099, 3246, 0)),
             new RSArea(new RSTile(3093, 3234, 0), new RSTile(3096, 3229, 0)),
