@@ -2,26 +2,24 @@ package scripts.nodes;
 
 import scripts.core.Node;
 import scripts.data.Constants;
-
-import org.tribot.api2007.Inventory;
 import scripts.data.Variables;
 
 /**
- * Created by Toon on 03/04/15.
+ * Created by Toon on 04/04/15.
  */
-public class Drop extends Node {
+public class WithdrawAxe extends Node {
     @Override
     public String status() {
-        return "Dropping logs";
+        return "Going to get an axe from the bank.";
     }
 
     @Override
     public boolean validate() {
-        return Inventory.isFull() && !Variables.bankingEnabled;
+        return !Variables.hasAxeInInventory && !Variables.hasAxeEquiped;
     }
 
     @Override
     public void execute() {
-        Inventory.dropAllExcept(Constants.AXE);
+        //TODO: Withdraw the right axe from the bank
     }
 }

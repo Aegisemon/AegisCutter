@@ -7,6 +7,7 @@ import scripts.data.Constants;
 import org.tribot.api.General;
 import org.tribot.api2007.types.RSObject;
 import org.tribot.api2007.types.RSTile;
+import scripts.data.Variables;
 
 /**
  * Created by Toon on 03/04/15.
@@ -19,13 +20,13 @@ public class Chop extends Node {
 
     @Override
     public boolean validate() {
-        return (Constants.hasAxeInInventory || Constants.hasAxeEquiped) && !Inventory.isFull() && !Player.getRSPlayer().isInCombat();
+        return (Variables.hasAxeInInventory || Variables.hasAxeEquiped) && !Inventory.isFull() && !Player.getRSPlayer().isInCombat() && Player.getAnimation() == -1;
     }
 
     @Override
     public void execute() {
         if (isInTreeArea()) {
-            RSObject tree = closestTree(Constants.treeToChop, 5);
+            RSObject tree = closestTree(Variables.treeToChop, 5);
             if (tree != null && Player.getAnimation() == -1) {
                 if (tree.isOnScreen()){
                     tree.getModel().click();
@@ -58,11 +59,13 @@ public class Chop extends Node {
     }
 
     private void walkToTreeArea() {
-        if (Banking.isInBank()) {
+        if (isInDraynorBank()) {
             for (RSTile tile : Constants.PATH_TO_TREE_AREA) {
                 Walking.clickTileMM(tile, 1);
                 General.sleep(2300, 4800);
             }
+        } else {
+            WebWalking.walkTo(Constants.TREE_AREA.getRandomTile());
         }
     }
 
@@ -70,5 +73,7 @@ public class Chop extends Node {
         return Constants.TREE_AREA.contains(Player.getPosition());
     }
 
-
+    private boolean isInDraynorBank() {
+        return Constants.DRAYNOR_BANK_AREA.contains(Player.getPosition());
+    }
 }

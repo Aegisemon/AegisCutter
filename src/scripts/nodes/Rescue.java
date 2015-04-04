@@ -23,6 +23,7 @@ public class Rescue extends Node {
 
     @Override
     public void execute() {
+        //TODO: Turn on run speed!
         WebWalking.walkToBank();
         rest();
     }
