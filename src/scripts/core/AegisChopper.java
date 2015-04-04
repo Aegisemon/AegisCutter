@@ -1,14 +1,12 @@
 package scripts.core;
 
-import org.tribot.api.Timing;
-import org.tribot.api2007.Skills;
-import scripts.nodes.Bank;
-import scripts.nodes.Chop;
-import scripts.nodes.Drop;
-import scripts.nodes.Rescue;
+import scripts.data.*;
+import scripts.nodes.*;
 import scripts.data.Paint;
 
 import org.tribot.api.General;
+import org.tribot.api.Timing;
+import org.tribot.api2007.Skills;
 import org.tribot.script.Script;
 import org.tribot.script.interfaces.Painting;
 import org.tribot.script.ScriptManifest;
@@ -29,7 +27,13 @@ public class AegisChopper extends Script implements Painting{
 
     public void onStart(){
         General.useAntiBanCompliance(true);
-        Collections.addAll(nodes, new Chop(), new Bank(), new Drop(), new Rescue());
+        Collections.addAll(
+                nodes,
+                new WalkToTrees(),
+                new Chop(),
+                new Bank(),
+                new Drop(),
+                new Rescue());
     }
 
     @Override
@@ -55,12 +59,11 @@ public class AegisChopper extends Script implements Painting{
 
         //TODO: Make methods
 
-        long timeRunning = System.currentTimeMillis() - Paint.startTime;
+        long timeRunning = System.currentTimeMillis() - Constants.START_TIME;
         int currentLvl = Skills.getActualLevel(Skills.SKILLS.WOODCUTTING);
-        int levelsGained = currentLvl - Paint.startLvl;
-        int xpToLevel = Skills.getXPToNextLevel(Skills.SKILLS.WOODCUTTING);
+        int levelsGained = currentLvl - Constants.START_LVL;
 
-        int xpGained = Skills.getXP(Skills.SKILLS.WOODCUTTING) - Paint.startXP;
+        int xpGained = Skills.getXP(Skills.SKILLS.WOODCUTTING) - Constants.START_XP;
         int xpPerHour = (int) (xpGained / ( timeRunning/ 3600000D));
         long timeToLevel = (long) (Skills.getXPToNextLevel(Skills.SKILLS.WOODCUTTING) * 3600000D / xpPerHour);
 

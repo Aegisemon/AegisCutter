@@ -29,9 +29,13 @@ public class Rescue extends Node {
     }
 
     public void rest(){
+        int hp = Player.getRSPlayer().getHealth();
         if (Banking.isInBank()){
-            int seconds = (General.random(9, 10) - Player.getRSPlayer().getHealth()) * 45;
-            General.sleep((seconds*1000) - 1800, (seconds*1000) + 3200);
+            if (hp < General.random(8, 9)) {
+                int seconds = (General.random(9, 10) - hp) * 45;
+                System.out.println("Resting about " + seconds + " seconds to get hp back up.");
+                General.sleep((seconds * 1000) - 1800, (seconds * 1000) + 3200);
+            }
         }
     }
 }

@@ -29,8 +29,10 @@ public class Bank extends Node {
         } else {
             if (Banking.isInBank()) {
                 Banking.openBankBooth();
-                if (Banking.isBankScreenOpen())
+                if (Banking.isBankScreenOpen()){
                     Banking.depositAllExcept(Constants.AXE);
+                    Banking.close();
+                }
             }
         }
     }

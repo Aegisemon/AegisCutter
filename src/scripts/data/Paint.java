@@ -9,10 +9,6 @@ import java.awt.*;
  */
 public class Paint {
 
-    public static final long startTime = System.currentTimeMillis();
-    public static final int startLvl = Skills.getActualLevel(Skills.SKILLS.WOODCUTTING);
-    public static final int startXP = Skills.getXP(Skills.SKILLS.WOODCUTTING);
-
     public static final Color white = Color.white;
     public static final Color blue = Color.blue;
     public static final Color gray = new Color(0, 0, 0, 100);
