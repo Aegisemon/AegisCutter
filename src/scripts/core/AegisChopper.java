@@ -1,5 +1,6 @@
 package scripts.core;
 
+import org.tribot.api2007.Combat;
 import scripts.data.*;
 import scripts.nodes.*;
 import scripts.data.Paint;
@@ -20,13 +21,14 @@ import java.util.List;
  * Created by Toon on 03/04/15.
  */
 
-@ScriptManifest(name = "AegisChopper", version = 1.0, category = "Woodcutting", authors = { "Aegisemon" }, description = "Cuts Willow trees in Draynor with a level 3 char.")
+@ScriptManifest(name = "AegisCutter", version = 1.0, category = "Woodcutting", authors = { "Aegisemon" }, description = "Cuts Willow trees in Draynor with a level 3 char.")
 
 public class AegisChopper extends Script implements Painting{
     List<Node> nodes = new ArrayList<Node>();
 
     public void onStart(){
         General.useAntiBanCompliance(true);
+        Combat.setAutoRetaliate(false);
         Collections.addAll(
                 nodes,
                 new WalkToTrees(),
