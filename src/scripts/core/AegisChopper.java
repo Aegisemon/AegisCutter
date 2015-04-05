@@ -57,29 +57,31 @@ public class AegisChopper extends Script implements Painting{
     @Override
     public void onPaint(Graphics graphics) {
 
-        //TODO: Make methods
-
         long timeRunning = System.currentTimeMillis() - Constants.START_TIME;
         int currentLvl = Skills.getActualLevel(Skills.SKILLS.WOODCUTTING);
         int levelsGained = currentLvl - Constants.START_LVL;
+        int currentTotalXP = Skills.getXP(Skills.SKILLS.WOODCUTTING);
 
         int xpGained = Skills.getXP(Skills.SKILLS.WOODCUTTING) - Constants.START_XP;
         int xpPerHour = (int) (xpGained / ( timeRunning/ 3600000D));
         long timeToLevel = (long) (Skills.getXPToNextLevel(Skills.SKILLS.WOODCUTTING) * 3600000D / xpPerHour);
 
         Graphics2D g = (Graphics2D)graphics;
+        Paint p = new Paint();
+
+        g.setRenderingHints(Paint.AA);
+
         g.setColor(Paint.gray);
         g.fillRect(8, 345, 504, 129);
-        g.setFont(Paint.title);
-        g.setColor(Paint.blue);
-        g.drawString("AegisCutter", 360, 360);
-        g.setFont(Paint.text);
-        g.setColor(Paint.white);
-        g.drawString("Time Ran: " + Timing.msToString(timeRunning), 360, 375);
-        g.drawString("Current Lvl: " + currentLvl + " (+" + levelsGained + ")", 360, 390);
-        g.drawString("Time to Lvl: " + Timing.msToString(timeToLevel), 360, 405);
-        g.drawString("XP Gained: " + xpGained, 360, 420);
-        g.drawString("XP/H: " + xpPerHour, 360, 435);
-        //g.drawString("Logs chopped: " + );
+
+        g.drawImage(Paint.IMG, 0, 303, null);
+
+        p.drawStat(g, Timing.msToString(timeRunning), 405, 373);
+        p.drawStat(g, Timing.msToString(timeToLevel), 432, 388);
+        p.drawStat(g, currentLvl + " (+" + levelsGained + ")", 432, 403);
+        p.drawStat(g, xpGained + " ( XP/H: " + xpPerHour + ")", 373, 418);
+        p.drawStat(g, String.valueOf((int)((currentTotalXP - Constants.START_XP) / 67.5)), 382, 433);
     }
+
+
 }

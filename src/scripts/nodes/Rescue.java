@@ -1,9 +1,9 @@
 package scripts.nodes;
 
-import org.tribot.api2007.Banking;
 import scripts.core.Node;
 
 import org.tribot.api.General;
+import org.tribot.api2007.Banking;
 import org.tribot.api2007.Player;
 import org.tribot.api2007.WebWalking;
 
@@ -23,12 +23,13 @@ public class Rescue extends Node {
 
     @Override
     public void execute() {
-        //TODO: Turn on run speed!
+        WebWalking.setUseRun(true);
         WebWalking.walkToBank();
         rest();
     }
 
     public void rest(){
+        WebWalking.setUseRun(false);
         int hp = Player.getRSPlayer().getHealth();
         if (Banking.isInBank()){
             if (hp < General.random(8, 9)) {

@@ -13,7 +13,7 @@ public class Constants {
     public static final String[] AXE = { "Bronze axe", "Iron axe", "Steel axe", "Mithril axe", "Adamant axe", "Rune axe", "Dragon axe" };
 
     public static final RSArea DRAYNOR_BANK_AREA = new RSArea(new RSTile(3092, 3240, 0), new RSTile(3097, 3246, 0));
-    public static final RSArea TREE_AREA = new RSArea(new RSTile(3088, 3229, 0), 6);
+    public static final RSArea WILLOW_AREA = new RSArea(new RSTile(3088, 3229, 0), 6);
 
     public static final RSArea[] PATH_TO_TREE_AREA = {
             new RSArea(new RSTile(3098, 3240, 0), new RSTile(3099, 3246, 0)),
@@ -21,8 +21,11 @@ public class Constants {
             new RSArea(new RSTile(3088, 3229, 0), 3)
     };
 
+    //PAINT
+
     public static final long START_TIME = System.currentTimeMillis();
     public static final int START_LVL = Skills.getActualLevel(Skills.SKILLS.WOODCUTTING);
     public static final int START_XP = Skills.getXP(Skills.SKILLS.WOODCUTTING);
 
+    public static final RSArea TREE_AND_OAK_AREA = new RSArea(new RSTile(3163, 3393, 0), 10);
 }

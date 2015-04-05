@@ -1,6 +1,5 @@
 package scripts.nodes;
 
-import org.tribot.api2007.WebWalking;
 import scripts.core.Node;
 import scripts.data.Constants;
 
@@ -9,7 +8,6 @@ import org.tribot.api2007.Inventory;
 import org.tribot.api2007.Player;
 import org.tribot.api2007.Walking;
 import org.tribot.api2007.types.RSArea;
-import scripts.data.Variables;
 
 /**
  * Created by Toon on 04/04/15.
@@ -27,14 +25,7 @@ public class WalkToTrees extends Node {
 
     @Override
     public void execute() {
-        if (Variables.isFirstRun) {
-            WebWalking.walkTo(Constants.DRAYNOR_BANK_AREA.getRandomTile());
-            if (isInDraynorBank()) {
-                Variables.isFirstRun = false;
-            }
-        } else {
-            walkToTreeArea();
-        }
+        walkToTreeArea();
     }
 
     private void walkToTreeArea() {
@@ -45,7 +36,7 @@ public class WalkToTrees extends Node {
     }
 
     private boolean isInTreeArea() {
-        return Constants.TREE_AREA.contains(Player.getPosition());
+        return Constants.WILLOW_AREA.contains(Player.getPosition());
     }
 
     private boolean isInDraynorBank() {

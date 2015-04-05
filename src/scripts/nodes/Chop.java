@@ -1,5 +1,6 @@
 package scripts.nodes;
 
+import org.tribot.api2007.types.RSItem;
 import scripts.data.Variables;
 import scripts.core.Node;
 
@@ -23,7 +24,7 @@ public class Chop extends Node {
 
     @Override
     public void execute() {
-        RSObject tree = closestTree(Variables.treeToChop, 5);
+        RSObject tree = closestTree(Variables.treeToChop, 20);
         if (tree != null && Player.getAnimation() == -1) {
             if (tree.isOnScreen()){
                 tree.getModel().click();
@@ -46,7 +47,7 @@ public class Chop extends Node {
     }
 
     private RSObject closestTree(String tree, int range) {
-        RSObject[] objects = Objects.findNearest(range, tree);
-        return objects.length > 0 ? objects[0] : null;
+        RSObject[] trees = Objects.findNearest(range, tree);
+        return trees.length > 0 ? trees[0] : null;
     }
 }
