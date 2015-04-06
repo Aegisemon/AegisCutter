@@ -66,7 +66,7 @@ public class AegisChopper extends Script implements Painting{
 
         int xpGained = Skills.getXP(Skills.SKILLS.WOODCUTTING) - Constants.START_XP;
         int xpPerHour = (int)(xpGained / ( timeRunning/ 3600000D));
-        int logs = (int)((currentTotalXP - Constants.START_XP) / 67.5);
+        int logs = (int)Math.round((currentTotalXP - Constants.START_XP) / 67.5);
         int logsPerHour = (int)(logs / ( timeRunning/ 3600000D));
         long timeToLevel = (long)(Skills.getXPToNextLevel(Skills.SKILLS.WOODCUTTING) * 3600000D / xpPerHour);
 
