@@ -71,7 +71,6 @@ public class AegisChopper extends Script implements Painting{
         long timeToLevel = (long)(Skills.getXPToNextLevel(Skills.SKILLS.WOODCUTTING) * 3600000D / xpPerHour);
 
         Graphics2D g = (Graphics2D)graphics;
-        Paint p = new Paint();
 
         g.setRenderingHints(Paint.AA);
 
@@ -80,11 +79,11 @@ public class AegisChopper extends Script implements Painting{
 
         g.drawImage(Paint.IMG, 0, 303, null);
 
-        p.drawStat(g, Timing.msToString(timeRunning), 405, 373);
-        p.drawStat(g, Timing.msToString(timeToLevel), 432, 388);
-        p.drawStat(g, currentLvl + " (+" + levelsGained + ")", 432, 403);
-        p.drawStat(g, xpGained + " ( XP/H: " + xpPerHour + ")", 373, 418);
-        p.drawStat(g, logs + " ( Logs/H: " + logsPerHour + ")", 382, 433);
+        Paint.drawStat(g, Timing.msToString(timeRunning), 405, 373);
+        Paint.drawStat(g, Timing.msToString(timeToLevel), 432, 388);
+        Paint.drawStat(g, currentLvl + " (+" + levelsGained + ")", 432, 403);
+        Paint.drawStat(g, xpGained + " ( XP/H: " + xpPerHour + ")", 373, 418);
+        Paint.drawStat(g, logs + " ( Logs/H: " + logsPerHour + ")", 382, 433);
     }
 
 

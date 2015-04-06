@@ -1,5 +1,7 @@
 package scripts.nodes;
 
+import org.tribot.api.Timing;
+import org.tribot.api.types.generic.Condition;
 import org.tribot.api2007.types.RSItem;
 import scripts.data.Variables;
 import scripts.core.Node;
@@ -14,12 +16,12 @@ import org.tribot.api2007.types.RSObject;
 public class Chop extends Node {
     @Override
     public String status() {
-        return "Chopping..";
+        return "Cutting..";
     }
 
     @Override
     public boolean validate() {
-        return (Variables.hasAxeInInventory || Variables.hasAxeEquiped) && !Inventory.isFull() && !Player.getRSPlayer().isInCombat() && Player.getAnimation() == -1;
+        return (Variables.hasAxeInInventory || Variables.hasAxeEquiped) && !Inventory.isFull() && !Player.getRSPlayer().isInCombat();
     }
 
     @Override
@@ -28,21 +30,18 @@ public class Chop extends Node {
         if (tree != null && Player.getAnimation() == -1) {
             if (tree.isOnScreen()){
                 tree.getModel().click();
-                preventSpamClick();
+
+                Timing.waitCondition(new Condition() {
+                    @Override
+                    public boolean active() {
+                        return Player.getAnimation() == -1;
+                    }
+                }, General.random(300, 700));
+
             } else {
                 Walking.blindWalkTo(tree.getPosition());
                 Camera.turnToTile(tree.getPosition());
             }
-        }
-    }
-
-    private void preventSpamClick() {
-        int timeout = 0;
-        while (Player.getAnimation() == -1) {
-            timeout++;
-            General.sleep(10);
-            if (timeout > 250)
-                break;
         }
     }
 

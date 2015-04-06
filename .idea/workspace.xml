@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b859939f-4327-4876-ad34-1278f0478620" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" afterPath="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Bank.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Bank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/nodes/Chop.java" afterPath="$PROJECT_DIR$/src/scripts/nodes/Chop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/data/Paint.java" afterPath="$PROJECT_DIR$/src/scripts/data/Paint.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AegisCutter.iws" />
@@ -29,14 +32,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AegisChopper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AegisChopper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50408995" vertical-offset="17" max-vertical-offset="1649">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1632">
+              <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="e#919#1112#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/data/Paint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalkToTrees.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/nodes/WalkToTrees.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding>
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Bank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5388548" vertical-offset="0" max-vertical-offset="978">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,14 +103,14 @@
         <option value="$PROJECT_DIR$/src/scripts/nodes/WithdrawAxe.java" />
         <option value="$PROJECT_DIR$/src/scripts/data/Constants.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/WalkToTrees.java" />
-        <option value="$PROJECT_DIR$/src/scripts/data/Paint.java" />
         <option value="$PROJECT_DIR$/src/scripts/data/Tree.java" />
         <option value="$PROJECT_DIR$/src/scripts/data/Variables.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Drop.java" />
-        <option value="$PROJECT_DIR$/src/scripts/nodes/Bank.java" />
-        <option value="$PROJECT_DIR$/src/scripts/nodes/Chop.java" />
-        <option value="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" />
         <option value="$PROJECT_DIR$/src/scripts/nodes/Rescue.java" />
+        <option value="$PROJECT_DIR$/src/scripts/data/Paint.java" />
+        <option value="$PROJECT_DIR$/src/scripts/core/AegisChopper.java" />
+        <option value="$PROJECT_DIR$/src/scripts/nodes/Chop.java" />
+        <option value="$PROJECT_DIR$/src/scripts/nodes/Bank.java" />
       </list>
     </option>
   </component>
@@ -96,6 +147,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,7 +234,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -492,12 +543,14 @@
       <workItem from="1428182252972" duration="4486000" />
       <workItem from="1428224943728" duration="11847000" />
       <workItem from="1428260011333" duration="194000" />
-      <workItem from="1428268628882" duration="397000" />
+      <workItem from="1428268628882" duration="477000" />
+      <workItem from="1428270500156" duration="370000" />
+      <workItem from="1428312164387" duration="1663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40405000" />
+    <option name="totallyTimeSpent" value="42518000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -579,6 +632,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="1649">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#919#1112#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
@@ -789,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/WalkToTrees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/data/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
@@ -820,34 +887,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Bank.java">
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Rescue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6779141" vertical-offset="0" max-vertical-offset="978">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.017382413" vertical-offset="0" max-vertical-offset="978">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/WalkToTrees.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46932516" vertical-offset="0" max-vertical-offset="978">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/data/Paint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24335378" vertical-offset="0" max-vertical-offset="978">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Rescue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.017382413" vertical-offset="0" max-vertical-offset="978">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -856,11 +917,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/core/AegisChopper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50408995" vertical-offset="17" max-vertical-offset="1649">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1632">
+          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Chop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#919#1112#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/nodes/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5388548" vertical-offset="0" max-vertical-offset="978">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -30,8 +30,8 @@ public class Bank extends Node {
         if (walk()){
             Banking.openBank();
             if (Banking.isBankScreenOpen()){
-                Banking.depositAllExcept(Constants.AXE);
-                Banking.close();
+                if (Inventory.find("Willow logs").length == Banking.depositAllExcept(Constants.AXE))
+                    Banking.close();
             }
         }
     }

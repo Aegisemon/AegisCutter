@@ -19,7 +19,7 @@ public class Paint {
 
     public static final Font text = new Font("Arial", 0, 12);
 
-    public void drawStat(Graphics2D g, String stat, int x, int y){
+    public static void drawStat(Graphics2D g, String stat, int x, int y){
         g.setFont(text);
         g.setColor(white);
         g.drawString(stat, x, y);
